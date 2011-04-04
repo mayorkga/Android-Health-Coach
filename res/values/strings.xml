@@ -2,4 +2,8 @@
 <resources>
     <string name="hello">Hello World!</string>
     <string name="app_name">Health Manager</string>
+    <string name="calories_burned">Calories Burned: </string>
+    <string name="calories_consumed">Calories Consumed: </string>
+    <string name="calories_total">Total Calories: </string>
+    <string name="exercise_session">Exercise Sessions: </string>
 </resources>

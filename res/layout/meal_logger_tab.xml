@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView 
+    	android:text="Daily Meal Logger" 
+    	android:id="@+id/title" 
+    	android:textSize="10pt"
+    	android:layout_marginLeft="21pt"
+    	android:layout_width="wrap_content" 
+    	android:paddingBottom="10pt"
+    	android:layout_height="wrap_content"/>
+    <TextView 
+    	android:text="Implemented Later" 
+    	android:id="@+id/implement" 
+    	android:textSize="10pt"
+    	android:layout_marginLeft="17pt"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"/>
+    <Button 
+    	android:text="Back" 
+    	android:id="@+id/button_back" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_alignParentBottom="true" 
+    	android:layout_marginLeft="50pt"/>
+</LinearLayout>

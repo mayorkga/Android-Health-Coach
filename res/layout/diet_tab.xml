@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:layout_weight="1">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Calorie Summary"
+        android:textSize="9pt" 
+        android:paddingLeft="14pt"
+        android:paddingBottom="3pt"/>
+    <TextView
+        android:id="@+id/date_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Date Picker Here"
+        android:textSize="9pt" 
+        android:paddingBottom="10pt"
+        android:paddingLeft="14pt"
+        android:layout_below="@id/title"/>
+    <TextView
+        android:id="@+id/burned"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_burned"
+        android:textSize="8pt" 
+        android:paddingBottom="4pt"
+        android:layout_below="@id/date_picker"/>
+    <TextView
+    	android:id="@+id/consumed"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/calories_consumed"
+        android:textSize="8pt" 
+        android:paddingBottom="4pt"
+        android:layout_below="@id/burned"/>
+    <TextView
+    	android:id="@+id/total"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/calories_total"
+        android:textSize="8pt"
+        android:layout_below="@id/consumed"/>
+    <Button 
+    	android:text="Daily Meal Logger" 
+    	android:id="@+id/button_meal_logger" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_alignParentBottom="true" 
+    	android:layout_marginLeft="35pt"/>
+</RelativeLayout>

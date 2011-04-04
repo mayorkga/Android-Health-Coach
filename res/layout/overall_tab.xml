@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:layout_weight="1">
+    <TextView
+        android:id="@+id/burned"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_burned"
+        android:textSize="8pt" android:paddingBottom="10pt"/>
+    <TextView
+    	android:id="@+id/consumed"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/calories_consumed"
+        android:textSize="8pt" android:paddingBottom="10pt"/>
+    <TextView
+    	android:id="@+id/total"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/calories_total"
+        android:textSize="8pt"/>
+</LinearLayout>
