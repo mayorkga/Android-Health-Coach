@@ -4,6 +4,17 @@
       android:versionCode="1"
       android:versionName="1.0">
     <application android:icon="@drawable/icon" android:label="@string/app_name">
+    	<activity android:name="android.health.gui.TabSelector"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    	<activity android:name="android.health.gui.OverallTabActivity"></activity>
+        <activity android:name="android.health.gui.DietTabActivity"></activity>
+        <activity android:name="android.health.gui.ExerciseTabActivity"></activity>
 
 
     </application>
