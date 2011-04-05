@@ -17,9 +17,9 @@ import android.widget.TextView;
 public class DietTabActivity extends Activity {
 	private TextView myDisplayDate;
     private Button myPickDate;
-    private int myYear;
-    private int myMonth;
-    private int myDay;
+    static int myYear;
+    static int myMonth;
+    static int myDay;
 
     static final int DATE_DIALOG_ID = 0;
 	public void onCreate(Bundle savedInstanceState) {

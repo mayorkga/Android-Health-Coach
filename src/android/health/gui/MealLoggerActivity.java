@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MealLoggerActivity extends Activity {
+	private TextView myDisplayDate;
+	
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.meal_logger_tab);
@@ -21,6 +24,14 @@ public class MealLoggerActivity extends Activity {
                 
             }
         });
+        myDisplayDate = (TextView) findViewById(R.id.date_display_logger);
+        
+        myDisplayDate.setText(
+                new StringBuilder()
+                        // Month is 0 based so add 1
+                        .append(DietTabActivity.myMonth + 1).append("-")
+                        .append(DietTabActivity.myDay).append("-")
+                        .append(DietTabActivity.myYear).append(" "));
 	}
 
 }

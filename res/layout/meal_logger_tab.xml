@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:orientation="vertical"
   android:layout_width="fill_parent"
@@ -8,17 +8,58 @@
     	android:text="Daily Meal Logger" 
     	android:id="@+id/title" 
     	android:textSize="10pt"
-    	android:layout_marginLeft="21pt"
+    	android:layout_marginLeft="30pt"
     	android:layout_width="wrap_content" 
     	android:paddingBottom="10pt"
     	android:layout_height="wrap_content"/>
-    <TextView 
-    	android:text="Implemented Later" 
-    	android:id="@+id/implement" 
+    <TextView
+    	android:text=""
+    	android:id="@+id/date_display_logger"
+    	android:textSize="9pt"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/title"
+    	android:layout_marginLeft="50pt"
+    	android:layout_marginBottom="12pt"/>
+    <TextView
+    	android:text="List of Meals for the day here"
+    	android:id="@+id/meal_list"
     	android:textSize="10pt"
-    	android:layout_marginLeft="17pt"
-    	android:layout_width="wrap_content" 
-    	android:layout_height="wrap_content"/>
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="15pt"
+    	android:layout_marginRight="15pt"
+    	android:layout_marginBottom="20pt"
+    	android:layout_below="@id/date_display_logger"/>
+    <TextView
+    	android:text="Add Meal"
+    	android:id="@+id/add_meal"
+    	android:textSize="8pt"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="15pt"
+    	android:layout_marginRight="15pt"
+    	android:layout_marginBottom="20pt"
+    	android:textColor="#0000aa"
+    	android:layout_below="@id/meal_list"/>
+    <TextView
+    	android:text="Total Calories Eaten"
+    	android:id="@+id/total_calories_logger"
+    	android:textSize="8pt"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="4pt"
+    	android:layout_below="@id/add_meal"/>
+    <TextView
+    	android:text="0"
+    	android:id="@+id/total_calories_logger_number"
+    	android:textSize="10pt"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginRight="4pt"
+    	android:layout_alignParentRight="true"
+    	android:textColor="#aa0000"
+    	android:layout_below="@id/add_meal"/>
     <Button 
     	android:text="Back" 
     	android:id="@+id/button_back_logger" 
@@ -26,4 +67,4 @@
     	android:layout_height="wrap_content" 
     	android:layout_alignParentBottom="true" 
     	android:layout_marginLeft="50pt"/>
-</LinearLayout>
+</RelativeLayout>
