@@ -15,6 +15,9 @@
     	<activity android:name="android.health.gui.OverallTabActivity"></activity>
         <activity android:name="android.health.gui.DietTabActivity"></activity>
         <activity android:name="android.health.gui.ExerciseTabActivity"></activity>
+        <activity android:name="android.health.gui.MealLoggerActivity"></activity>
+        <activity android:name="android.health.gui.ExerciseStatisticsActivity"></activity>
+        <activity android:name="android.health.gui.NewExerciseSessionActivity"></activity>
 
 
     </application>

@@ -12,23 +12,46 @@
         android:textSize="9pt" 
         android:paddingLeft="14pt"
         android:paddingBottom="3pt"/>
-    <TextView
-        android:id="@+id/date_picker"
-        android:layout_width="fill_parent"
+    <TextView android:id="@+id/display_date"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Place Date Picker Here"
-        android:textSize="9pt" 
-        android:paddingBottom="10pt"
-        android:paddingLeft="14pt"
+        android:text=""
+        android:textSize="8pt" 
+        android:layout_marginBottom="10pt"
+        android:layout_marginTop="13pt"
+        android:layout_marginLeft="4pt"
+        android:layout_alignParentLeft="true"
         android:layout_below="@id/title"/>
+    <Button android:id="@+id/pick_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10pt"
+        android:layout_marginTop="10pt"
+        android:layout_below="@id/title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4pt"
+        android:text="Change the date" 
+        android:layout_marginLeft="37pt"/>
     <TextView
         android:id="@+id/burned"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/calories_burned"
         android:textSize="8pt" 
         android:paddingBottom="4pt"
-        android:layout_below="@id/date_picker"/>
+        android:layout_marginLeft="4pt"
+        android:layout_below="@id/pick_date"/>
+    <TextView
+        android:id="@+id/burned_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/burned"
+        android:layout_alignTop="@id/burned"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4pt"
+        android:textSize="8pt"
+        android:textColor="#aa0000"
+        android:text="0"/>
     <TextView
     	android:id="@+id/consumed"
     	android:layout_width="fill_parent"
@@ -36,19 +59,43 @@
     	android:text="@string/calories_consumed"
         android:textSize="8pt" 
         android:paddingBottom="4pt"
+        android:layout_marginLeft="4pt"
         android:layout_below="@id/burned"/>
+    <TextView
+        android:id="@+id/consumed_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/consumed"
+        android:layout_alignTop="@id/consumed"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4pt"
+        android:textSize="8pt"
+        android:textColor="#00aa00"
+        android:text="0"/>
     <TextView
     	android:id="@+id/total"
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	android:text="@string/calories_total"
         android:textSize="8pt"
+        android:layout_marginLeft="4pt"
         android:layout_below="@id/consumed"/>
+    <TextView
+        android:id="@+id/total_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/total"
+        android:layout_alignTop="@id/total"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4pt"
+        android:textSize="8pt"
+        android:textColor="#00aa00"
+        android:text="0"/>
     <Button 
     	android:text="Daily Meal Logger" 
     	android:id="@+id/button_meal_logger" 
-    	android:layout_width="wrap_content" 
-    	android:layout_height="wrap_content" 
+    	android:layout_width="50pt" 
+    	android:layout_height="38pt" 
     	android:layout_alignParentBottom="true" 
     	android:layout_marginLeft="35pt"/>
 </RelativeLayout>
