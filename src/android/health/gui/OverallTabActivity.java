@@ -1,5 +1,11 @@
 package android.health.gui;
 
+/**
+ * This class takes care of the display for the default Overall Tab
+ * 
+ * @author Dan Abrams
+ */
+
 import android.app.Activity;
 import android.health.manager.R;
 import android.os.Bundle;

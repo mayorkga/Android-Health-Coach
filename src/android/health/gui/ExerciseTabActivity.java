@@ -1,5 +1,11 @@
 package android.health.gui;
 
+/**
+ * This class takes care of the display for the default Exercise Tab
+ * 
+ * @author Dan Abrams
+ */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.health.manager.R;

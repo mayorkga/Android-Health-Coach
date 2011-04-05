@@ -1,5 +1,12 @@
 package android.health.gui;
 
+/**
+ * This class takes care of the display for the Meal Logger button
+ * from the default Diet Tab
+ * 
+ * @author Dan Abrams
+ */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.health.manager.R;

@@ -1,0 +1,12 @@
+Project developed for Android Phone
+
+Developed in Eclipse with Android Development Plugin
+
+Installation guide for Android SDK/plugin:
+	http://developer.android.com/sdk/installing.html
+
+Guide to setting up Hello, World application:
+	http://developer.android.com/resources/tutorials/hello-world.html
+
+Once "Hello, World" is running on an appropriate emulator (specified in guide),
+this project should compile and run fine.

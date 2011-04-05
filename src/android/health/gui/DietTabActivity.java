@@ -1,5 +1,11 @@
 package android.health.gui;
 
+/**
+ * This class takes care of the display for the default Diet Tab
+ * 
+ * @author Dan Abrams
+ */
+
 import java.util.Calendar;
 
 import android.app.Activity;

@@ -1,5 +1,11 @@
 package android.health.gui;
 
+/**
+ * This class takes care of the actual displaying of the tabs
+ * 
+ * @author Dan Abrams
+ */
+
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
